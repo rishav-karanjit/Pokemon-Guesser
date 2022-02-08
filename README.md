@@ -15,8 +15,10 @@
 ## About The Project
 <ul>
   <li> Quiz App </li>
-  <li> Guess whos that pokemon</li>
+  <li> Guess whos that Pokemon</li>
   <li> Answer until you get wrong</li>
+  <li> Questions get progressively harder</li>
+  <li> Question data gathered from PokeAPI (https://github.com/PokeAPI/pokeapi)</li>
 </ul>
 
 ## Authors:
