@@ -7,8 +7,11 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#authors">Authors</a>
+      <a href="#built-with">Built With</a>
     </li>
+    <li>
+      <a href="#authors">Authors</a>
+    </li>   
   </ol>
 </details>
 
