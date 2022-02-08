@@ -13,7 +13,11 @@
 </details>
 
 ## About The Project
-This is a test sentence.
+<ul>
+  <li> Quiz App </li>
+  <li> Guess whos that pokemon</li>
+  <li> Answer until you get wrong</li>
+</ul>
 
 ## Authors:
 
