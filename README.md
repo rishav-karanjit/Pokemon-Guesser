@@ -13,6 +13,7 @@
 </details>
 
 ## About The Project
+This is a test sentence.
 
 ## Authors:
 
