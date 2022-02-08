@@ -22,12 +22,12 @@
   <li> Answer until you get wrong</li>
   <li> Questions get progressively harder</li>
   <li> Question data gathered from PokeAPI (https://github.com/PokeAPI/pokeapi)</li>
-  <li> Written in Python</li>
+  
 </ul>
 
 ## Built With
 
-- Insert text here
+<li> Written in Python</li>
 
 ## Authors:
 
