@@ -36,6 +36,11 @@
   <li> Written in Python</li>
 </ul>
 
+## Scrum Master
+<ul>
+  <li> Rishav Karanjit </li>
+</ul>
+
 ## Authors:
 
 - [Joshua Wayne Campbell](https://github.com/jwcampb)
