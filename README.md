@@ -1,6 +1,10 @@
+[![PikachuWalk](https://emoji.gg/assets/emoji/6921-pikachuwalk.gif)](https://emoji.gg/emoji/6921-pikachuwalk)
+[![Charizard_Think](https://emoji.gg/assets/emoji/4369-charizard-think.png)](https://emoji.gg/emoji/4369-charizard-think)
 # Pokemon-Guesser
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
