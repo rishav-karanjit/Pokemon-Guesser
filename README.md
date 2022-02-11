@@ -47,9 +47,8 @@
 </ul>
 
 ## Scrum Master
-<ul>
-  <li> [Rishav Karanjit](https://github.com/rishav-karanjit) </li>
-</ul>
+
+- [Rishav Karanjit](https://github.com/rishav-karanjit)
 
 ## Authors:
 
