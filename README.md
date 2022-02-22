@@ -25,13 +25,10 @@
       <a href="#built-with">Built With</a>
     </li>
     <li>
-      <a href="#roadmap">Roadmap</a>
-    </li> 
-    <li>
       <a href="#license">License</a>
     </li>
     <li>
-      <a href="#acknowledgements">Acknowledgements</a>
+      <a href="#WireFrames">WireFrames</a>
     </li>
   </ol>
 </details>
@@ -59,10 +56,6 @@
 ## Built With
 
 <li> Written in Python</ul>
-
-## Roadmap
-
-- Coming Soon
 
 ## License
 
