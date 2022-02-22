@@ -68,6 +68,6 @@
 
 - Distributed under the MIT License. See `LICENSE` for more information.
 
-## Acknowledgements
+## WireFrames
 
-- Coming Soon
+- [See our Wireframes](https://github.com/rishav-karanjit/Pokemon-Guesser/tree/main/Wireframes)
