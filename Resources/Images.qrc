@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>pokemon_PNG71.png</file>
+    <file>pokemon_PNG74.png</file>
+    <file>pokemon_PNG82.png</file>
+    <file>pokemon_PNG105.png</file>
+    <file>pokemon_PNG106.png</file>
+    <file>pokemon_PNG114.png</file>
+    <file>pokemon_PNG124.png</file>
+    <file>pokemon_PNG133.png</file>
+    <file>pokemon_PNG135.png</file>
+    <file>pokemon_PNG137.png</file>
+    <file>pokemon_PNG141.png</file>
+    <file>pokemon_PNG145.png</file>
+    <file>pokemon_PNG148.png</file>
+    <file>pokemon_PNG149.png</file>
+    <file>pokemon_PNG150.png</file>
+    <file>pokemon_PNG154.png</file>
+    <file>pokemon_PNG157.png</file>
+    <file>pokemon_PNG158.png</file>
+    <file>pokemon_PNG160.png</file>
+  </qresource>
+</RCC>
