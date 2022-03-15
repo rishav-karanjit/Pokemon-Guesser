@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic, QtCore
 import sys
 from Resources import images
 from Questions import QuestionScreen
-# from Grammer_checkUI import Mistakes
+from Settings import SettingsUI
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
@@ -20,7 +20,7 @@ class Ui(QtWidgets.QMainWindow):
 
         #button connect
         self.LetsPlay.clicked.connect(self.LetsPlay_Clicked)
-        # self.Setting.clicked.connect(self.Setting_Clicked)
+        self.Setting.clicked.connect(self.Setting_Clicked)
         self.Close.clicked.connect(sys.exit)
         self.minimize.clicked.connect(self.showMinimized)
         #move window to (50,5)
@@ -28,6 +28,9 @@ class Ui(QtWidgets.QMainWindow):
 
     def LetsPlay_Clicked(self):
         self.window=QuestionScreen(self)
+
+    def Setting_Clicked(self):
+        self.window = SettingsUI(self)
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
