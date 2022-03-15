@@ -28,7 +28,10 @@
       <a href="#license">License</a>
     </li>
     <li>
-      <a href="#WireFrames">WireFrames</a>
+      <a href="#wireframes">WireFrames</a>
+    </li>
+    <li>
+      <a href="#how-to-run-this-project">How to run this project?</a>
     </li>
   </ol>
 </details>
@@ -64,3 +67,12 @@
 ## WireFrames
 
 - [See our Wireframes](https://github.com/rishav-karanjit/Pokemon-Guesser/tree/main/Wireframes)
+
+## How to run this project?
+
+- Install requirements:
+  - Pokebase: ```pip install pokebase```
+  - PyQt5: ```pip install pyqt5```
+- Run main.py ```python main.py```
+
+``` Note: This projects runs only on python 3.6 as Pokebase is tested only on python 3.6 ```
