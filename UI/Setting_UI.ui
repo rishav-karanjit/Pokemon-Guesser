@@ -6,15 +6,555 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1119</width>
+    <height>796</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1121</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>891</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Garamond</family>
+       <pointsize>66</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">letter-spacing:2px</string>
+     </property>
+     <property name="text">
+      <string>Pokemon Guesser</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minimize">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border:none;
+border-radius:8px;
+background-color:rgb(85,255,127);
+}
+
+QPushButton:hover{
+	background-color:rgb(85,255,127,150);
+}</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Close">
+     <property name="geometry">
+      <rect>
+       <x>1030</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border:none;
+border-radius:8px;
+background-color:rgb(255,0,0);
+}
+
+QPushButton:hover{
+	background-color:rgb(255,0,0,150);
+}</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>291</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>36</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Difficultly</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>36</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Generation</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>333</x>
+      <y>240</y>
+      <width>20</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Medium">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>310</y>
+      <width>211</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>Medium</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_III">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>III</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_I">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>I</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_II">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>II</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_IV">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>IV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_V">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>V</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_VI">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>VI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Generation_VII">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>490</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>VII</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Easy">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>310</y>
+      <width>211</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>Easy</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Hard">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>310</y>
+      <width>211</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>Hard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Home_Screen">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>680</y>
+      <width>591</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>30</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(255,229,180);
+	border: 3px solid;
+	border-color: rgb(0, 0, 0);
+	letter-spacing:2px
+}
+
+QPushButton:hover{
+border-radius: 15px;
+	background-color: rgb(255, 180, 172);
+}</string>
+    </property>
+    <property name="text">
+     <string>Home Screen</string>
+    </property>
+   </widget>
+  </widget>
  </widget>
  <resources/>
  <connections/>
