@@ -1,6 +1,5 @@
 from PyQt5 import QtWidgets, uic, QtCore
 import sys
-from PyQt5.QtCore import QPoint
 
 class Lose(QtWidgets.QDialog):
 	def __init__(self,question,main):

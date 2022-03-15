@@ -1,6 +1,5 @@
 from PyQt5 import QtWidgets, uic, QtCore
 import sys
-from PyQt5.QtCore import QPoint
 from Youlose import Lose
 
 class QuestionScreen(QtWidgets.QMainWindow):
