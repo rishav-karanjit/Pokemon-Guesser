@@ -1,37 +1,78 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/rishav-karanjit/Pokemon-Guesser/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<h1 align="center">Pokemon-Guesser</h1>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<h2 align="center">
+  
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
+  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)<br>
+  <a href="https://emoji.gg/emoji/6921-pikachuwalk"><img src="https://emoji.gg/assets/emoji/6921-pikachuwalk.gif" alt="PikachuWalk"></a>
+  <a href="https://emoji.gg/emoji/4369-charizard-think"><img src="https://emoji.gg/assets/emoji/4369-charizard-think.png" alt="Charizard_Think"></a>
+  
 
-### Markdown
+</h2>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+    </li>
+    <li>
+      <a href="#authors">Authors</a>
+    </li> 
+    <li>
+      <a href="#built-with">Built With</a>
+    </li>
+    <li>
+      <a href="#license">License</a>
+    </li>
+    <li>
+      <a href="#wireframes">WireFrames</a>
+    </li>
+    <li>
+      <a href="#how-to-run-this-project">How to run this project?</a>
+    </li>
+  </ol>
+</details>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## About The Project
+<ul>
+  <li> Quiz App </li>
+  <li> Guess whos that Pokemon</li>
+  <li> Answer until you get wrong</li>
+  <li> Questions get progressively harder</li>
+  <li> Question data gathered from PokeAPI (https://github.com/PokeAPI/pokeapi)</li>
+  <li> Written in Python</li>
+</ul>
 
-```markdown
-Syntax highlighted code block
+## Scrum Master
 
-# Header 1
-## Header 2
-### Header 3
+- [Rishav Karanjit](https://github.com/rishav-karanjit)
 
-- Bulleted
-- List
+## Authors:
 
-1. Numbered
-2. List
+- [Joshua Wayne Campbell](https://github.com/jwcampb)
+- [Patrick Daniel Sandoval](https://github.com/rickthepat05)
+- [Rishav Karanjit](https://github.com/rishav-karanjit)
 
-**Bold** and _Italic_ and `Code` text
+## Built With
 
-[Link](url) and ![Image](src)
-```
+<li> Written in Python</ul>
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## License
 
-### Jekyll Themes
+- Distributed under the MIT License. See `LICENSE` for more information.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rishav-karanjit/Pokemon-Guesser/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## WireFrames
 
-### Support or Contact
+- [See our Wireframes](https://github.com/rishav-karanjit/Pokemon-Guesser/tree/main/Wireframes)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## How to run this project?
+
+- Install requirements:
+  - Pokebase: ```pip install pokebase```
+  - PyQt5: ```pip install pyqt5```
+- Run main.py ```python main.py```
+
+``` Note: This projects runs only on python 3.6 as Pokebase is tested only on python 3.6 ```
