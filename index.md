@@ -1,7 +1,5 @@
-
-<h1 align="center">Pokemon-Guesser</h1>
-
 <h2 align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">License: MIT
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
