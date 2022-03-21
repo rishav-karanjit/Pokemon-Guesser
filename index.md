@@ -1,9 +1,7 @@
 <h2 align="center">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">License: MIT
-  
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/)
-  [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)<br>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+  <a href="https://opensource.org/"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"></a><br>
   <a href="https://emoji.gg/emoji/6921-pikachuwalk"><img src="https://emoji.gg/assets/emoji/6921-pikachuwalk.gif" alt="PikachuWalk"></a>
   <a href="https://emoji.gg/emoji/4369-charizard-think"><img src="https://emoji.gg/assets/emoji/4369-charizard-think.png" alt="Charizard_Think"></a>
   
@@ -56,7 +54,7 @@
 
 ## Built With
 
-<li> Written in Python</ul>
+ - Written in Python
 
 ## License
 
