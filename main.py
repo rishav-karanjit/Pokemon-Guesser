@@ -1,38 +1,20 @@
-from PyQt5 import QtWidgets, uic, QtCore
-import sys
-from Resources import images
-from Questions import QuestionScreen
-from Settings import SettingsUI
+import tkinter
+from tkinter import *
 
-class Ui(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(Ui, self).__init__()
-        self.setWindowFlags(QtCore.Qt.FramelessWindowHint)
-        uic.loadUi('UI/Start_Screen.ui', self)
-        self.initUI()
+import backend
+import frontend
 
-    def initUI(self):
-        #Find Push buttons
-        self.LetsPlay = self.findChild(QtWidgets.QPushButton, 'LetsPlay')
-        self.Setting = self.findChild(QtWidgets.QPushButton, 'Settings')
-        self.Close = self.findChild(QtWidgets.QPushButton, 'Close')
-        self.minimize = self.findChild(QtWidgets.QPushButton, 'minimize')
+root = Tk()
+root.title('Pokémon Guesser')
+root.minsize(800, 650)
+root.configure(background='black')
 
-        #button connect
-        self.LetsPlay.clicked.connect(self.LetsPlay_Clicked)
-        self.Setting.clicked.connect(self.Setting_Clicked)
-        self.Close.clicked.connect(sys.exit)
-        self.minimize.clicked.connect(self.showMinimized)
-        #move window to (50,5)
-        self.move(500, 300)
+fake_root = Label(master=root, background='black')
+fake_root.pack(expand=1, fill=tkinter.BOTH)
+fake_root.rowconfigure(0, weight=1)
+fake_root.rowconfigure(1, weight=1)
 
-    def LetsPlay_Clicked(self):
-        self.window=QuestionScreen(self)
+backend.toggleGeneration(0)
+frontend.drawStart(fake_root)
 
-    def Setting_Clicked(self):
-        self.window = SettingsUI(self)
-
-app = QtWidgets.QApplication(sys.argv)
-window = Ui()
-window.show()
-app.exec_()
+root.mainloop()
