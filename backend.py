@@ -15,6 +15,7 @@ USED_PKMN = []
 TOTAL_POSSIBLE_PKMN = 0
 
 
+# Selects a generation to use
 def toggleGeneration(index):
     global TOTAL_POSSIBLE_PKMN
 
@@ -28,7 +29,8 @@ def toggleGeneration(index):
         GENERATIONS[index] = False
         TOTAL_POSSIBLE_PKMN = TOTAL_POSSIBLE_PKMN - getAmountInGen(index)
 
-
+        
+# Returns the index range of a selected generation
 def getGenRange():
     POSSIBlE_GENS = [i for i, j in enumerate(GENERATIONS) if j]
 
@@ -56,6 +58,7 @@ def getGenRange():
         return [722, 809]
 
 
+# Returns the amount of Pokemon in a selected generation
 def getAmountInGen(gen):
     if gen == 0:
         return 151
@@ -91,21 +94,17 @@ def getRandPokemonJSON(correctAnswer, difficulty):
     else:
         pokedexNum = random.randint(gen[0], gen[1])
 
+    #Type of data gotten depends on the difficulty selected
     if difficulty == 0:
-        # Append that number to end of API URL
         url = URL + 'pokemon/' + str(pokedexNum)
-
-        # Send GET request and return JSON of that Pokemon's data
         return requests.get(url=url)
 
     elif difficulty == 1:
-        # Append that number to end of API URL
         url = URL + 'pokemon-species/' + str(pokedexNum)
-
-        # Send GET request and return JSON of that Pokemon's data
         return requests.get(url=url)
 
 
+# Checks if a selected answer choice is the same as the correct answer
 def checkAnswer(userAnswer, correctAnswer):
     if userAnswer == correctAnswer:
         global SCORE
@@ -143,6 +142,7 @@ def getRandAnswerEasy(choices, ansPrimary, ansSecondary):
         return temp
 
 
+#  Similar to getRandAnswerEasy, but simpler. It just gets the Pokedex entry of a selected Pokemon
 def getRandAnswerHard(choices):
     falseData = getRandPokemonJSON(False, 1)
 
@@ -153,6 +153,9 @@ def getRandAnswerHard(choices):
     return temp
 
 
+# Does everything to generate a new easy question
+# It returns a string of the question, a list of all the answer choices, and
+# the index of the correct answer that is in said list
 def newQuestionEasy():
     # Gets a random Pokemon's data
     answerData = getRandPokemonJSON(True, 0)
@@ -191,6 +194,7 @@ def newQuestionEasy():
     return [Question, AnswerChoices, AnswerIndex]
 
 
+# Similar to newQuestionEasy
 def newQuestionHard():
     # Gets a random Pokemon's data
     answerData = getRandPokemonJSON(True, 1)
@@ -227,11 +231,13 @@ def newQuestionHard():
     AnswerIndex = AnswerChoices.index(answerName)
 
     # String for the question itself
+    # Added stuff for formating
     Question = str(answerDescription)
     Question = Question.replace(answerName, '_________')
     Question = Question.replace(answerName.upper(), '_________')
     Question = Question.replace(answerName.capitalize(), '_________')
     Question = Question.replace(u'\f', u'\n')
     Question = Question.replace('\n', ' ')
+    Question = Question.replace('- ', '')
 
     return [Question, AnswerChoices, AnswerIndex]
