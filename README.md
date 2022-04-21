@@ -70,9 +70,13 @@
 
 ## How to run this project?
 
+#### Method 1
+- Download PokemonGuesser.exe and start playing
+
+#### Method 2 (mostly for developers)
 - Install requirements:
   - Pokebase: ```pip install pokebase```
-  - PyQt5: ```pip install pyqt5```
+  - Tkinter: ```pip install tk```
 - Run main.py ```python main.py```
 
 ``` Note: This projects runs only on python 3.6 as Pokebase is tested only on python 3.6 ```
