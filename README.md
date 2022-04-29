@@ -31,6 +31,9 @@
       <a href="#wireframes">WireFrames</a>
     </li>
     <li>
+      <a href="#demo">Demo</a>
+    </li>
+    <li>
       <a href="#how-to-run-this-project">How to run this project?</a>
     </li>
   </ol>
@@ -67,6 +70,10 @@
 ## WireFrames
 
 - [See our Wireframes](https://github.com/rishav-karanjit/Pokemon-Guesser/tree/main/Wireframes)
+
+## Demo
+
+-
 
 ## How to run this project?
 
