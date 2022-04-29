@@ -77,7 +77,7 @@
 - Install requirements:
   - Pokebase: ```pip install pokebase```
   - Tkinter: ```pip install tk```
-  - Playsound: ```pip install playsound```
+  - Playsound: ```pip install playsound==1.2.2```
 - Run main.py ```python main.py```
 
 ``` Note: This projects runs only on python 3.6 as Pokebase is tested only on python 3.6 ```
