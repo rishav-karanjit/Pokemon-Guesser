@@ -1,6 +1,6 @@
 from tkinter import *
 from functools import partial
-
+from playsound import playsound
 import backend
 
 
@@ -19,7 +19,14 @@ def drawStart(root):
     root.rowconfigure(1, weight=1)
 
     # Top Frame
-    top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+    # #e4000f is red pokeball color
+    # #362D5C is purple masterball color
+    if backend.DIFFICULTY == 'EASY':
+        top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+
+    else:
+        top_frm = Frame(master=root, bg='#362D5C', padx=5, pady=5)
+        
     top_frm.grid(row=0, column=0, columnspan=3, padx=10, pady=(10, 5), sticky='nsew')
     top_frm.grid_propagate(FALSE)
 
@@ -67,6 +74,13 @@ def drawStart(root):
 # Question Page --------------------------------------------------------------------------------------------------------
 def nextQuestion(root, question_lbl, score_lbl, answerA, answerB, answerC, answerD):
     backend.SCORE = backend.SCORE + 1
+    #Sound for getting question correct
+    try:
+        playsound('12_4.mp3')
+    
+    except:
+        print('cannot open audio file')
+        
     if backend.SCORE == backend.TOTAL_POSSIBLE_PKMN:
         drawGameOver(root, True)
     else:
@@ -83,7 +97,12 @@ def callDrawQuestion(root, title_lbl):
 
 def drawQuestion(root):
     # Top Frame
-    top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+    if backend.DIFFICULTY == 'EASY':
+        top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+
+    else:
+        top_frm = Frame(master=root, bg='#362D5C', padx=5, pady=5)
+
     top_frm.grid(row=0, column=0, columnspan=3, padx=10, pady=(10, 5), sticky='nsew')
     top_frm.grid_propagate(FALSE)
 
@@ -170,7 +189,12 @@ def drawGameOver(root, result):
         x.destroy()
 
     # Top Frame
-    top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+    if backend.DIFFICULTY == 'EASY':
+        top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+
+    else:
+        top_frm = Frame(master=root, bg='#362D5C', padx=5, pady=5)
+        
     top_frm.grid(row=0, column=0, columnspan=3, padx=10, pady=(10, 5), sticky='nsew')
     top_frm.grid_propagate(FALSE)
 
@@ -248,7 +272,12 @@ def drawSettings(root):
         x.destroy()
 
     # Top Frame
-    top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+    if backend.DIFFICULTY == 'EASY':
+        top_frm = Frame(master=root, bg='#e4000f', padx=5, pady=5)
+
+    else:
+        top_frm = Frame(master=root, bg='#362D5C', padx=5, pady=5)
+
     top_frm.grid(row=0, column=0, columnspan=3, padx=10, pady=(10, 5), sticky='nsew')
     top_frm.grid_propagate(FALSE)
 
@@ -359,6 +388,7 @@ def drawSettings(root):
 
     if backend.DIFFICULTY == 'EASY':
         easy_btn.configure(relief='sunken')
+
     else:
         hard_btn.configure(relief='sunken')
 
