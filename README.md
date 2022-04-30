@@ -73,7 +73,7 @@
 
 ## Demo
 
-(https://drive.google.com/file/d/14VRaH0WKyISLsIaXQ_RaeiAxIy4dWLSR/view?resourcekey)
+- https://drive.google.com/file/d/14VRaH0WKyISLsIaXQ_RaeiAxIy4dWLSR/view?resourcekey
 
 ## How to run this project?
 
