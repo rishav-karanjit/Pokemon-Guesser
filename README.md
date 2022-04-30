@@ -79,6 +79,7 @@ https://user-images.githubusercontent.com/47791785/166089611-d709093e-e31d-44f8-
 
 #### Method 1
 - Download PokemonGuesser.exe and start playing
+
 ```Note: If you want audio when you click the right answer, make sure the .exe and mp3 are in the same directory. Otherwise, enjoy!```
 
 #### Method 2 (mostly for developers)
